@@ -17,4 +17,10 @@ export class MoviesService {
   getUrl(path: string): string {
     return `${this.url}${path}?api_key=${this.API_KEY}&language=es-US&page=1`;
   }
+
+  getSearchMovie(string): Observable<any> {
+    return this.http.get(
+      `https://api.themoviedb.org/3/find/{external_id}?api_key=${this.API_KEY}&language=es-MX&external_source=imdb_id`
+    );
+  }
 }

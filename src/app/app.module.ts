@@ -6,9 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SearchComponent } from './pages/search/search.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MovieComponent } from './pages/movie/movie.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SearchComponent],
+  declarations: [AppComponent, HomeComponent, SearchComponent, NavbarComponent, MovieComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
