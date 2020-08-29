@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SearchComponent } from './pages/search/search.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MovieComponent } from './pages/movie/movie.component';
+import { MoviesComponent } from './components/movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MovieComponent } from './pages/movie/movie.component';
     SearchComponent,
     NavbarComponent,
     MovieComponent,
+    MoviesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

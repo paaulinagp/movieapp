@@ -8,4 +8,20 @@
   
 
 -->
-<p>home works!</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">MoviesApp</h1>
+    <p class="lead">Encuentra las últimas películas</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Películas en cartelera</h1>
+    </div>
+    <div class="card" (click)="sendMovie(movie)" *ngFor="let movie of moviesPopular">
+      <img [src]="moviesService.getImageUrl(movie.poster_path)" class="card-img-top" alt="...">
+      <span class="badge badge-secondary">Secondary</span>
+    </div>
+  </div>
+</div>

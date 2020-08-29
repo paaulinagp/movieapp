@@ -18,6 +18,6 @@ export class NavbarComponent implements OnInit {
       return;
     }
 
-    this.router.navigate(['buscar', this.search]);
+    this.router.navigate(['buscar']);
   }
 }
